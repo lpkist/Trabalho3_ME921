@@ -1,0 +1,5 @@
+# Trabalho3_ME921
+Este repositório contém os códigos que foram desenvolvidos para a realização do trabalho 3 da disciplina ME921 (Aprendizado de Máquinas Não Supervisionado), cujo objetivo era clusterizar dados em rede obtidos a partir de webscraping. O relatório está disponível no arquivo ```Trabalho_3_ME921.pdf```. Para isso, foram utilizadas as informações de siglas que são pré-requisitos para outras, a partir dos sites derivados de (https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2024/disciplinas/). 
+Para a reprodução dos resultados, deve-se executar os scripts na seguinte ordem:
+ 1. ```extraindo_dados.R```: este script, utilizando os pacotes ```rvest``` e ```xml2``` faz download de todas as páginas de disciplinas, extrai os pré-requisitos listados em cada uma e lista as diferentes siglas a que elas pertencem (por exemplo, ME921 é da sigla ME). Depois, constrói a matriz de adjacências e salva o resultado no arquivo ```matriz_adj.RData```;
+ 3. ```clusterizando.R```: este script faz o tratamento final dos dados, aplica os métodos de clusterização e gera os resultados apresentados no relatório.
